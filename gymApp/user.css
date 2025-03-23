@@ -1,0 +1,430 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+}
+
+.top-container {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("gym.jpg");
+    background-attachment: fixed;
+    background-position: center 240%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-container h1{
+    background-color: black;
+    width: 300px;
+    min-width: 300px;
+    color: white;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0e43f;
+    padding-left: 170px;
+    height: 35px;
+    box-shadow: 0 0 30px rgb(212, 214, 214);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav button {
+    padding: 7.5px 40px;
+    border:none;
+    font-weight: bold;
+    margin-right: 30px;
+    color: black;
+    background-color: #f0e43f;
+    cursor: pointer;
+    margin:0px;
+    transition: 0.3s;
+}
+
+.nav button:hover{
+    background-color: black;
+    color:white;
+}
+.nav button.active {
+    background-color: #f0e43f;
+    color: white;
+}
+.logout{
+    padding: 7.5px 30px;
+    border:none;
+    font-weight: bold;
+    margin-right: 30px;
+    color: black;
+    background-color: #f0e43f;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    background-color: black;
+    color:white;
+}
+
+#Services{
+    margin: 50px 160px;
+}
+
+.services {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 548px;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+}
+
+.services button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+.services button:hover {
+    background-color: #ddd;
+}
+  
+.services button.active {
+    background-color: #ccc;
+}
+  
+.tabcontent2 {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 548px;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+}
+
+.servicesContent h3 {
+    border-bottom: 2px solid #ccc;;
+    padding: 3px 0 18px 15px;
+}
+
+p {
+    padding: 30px;
+    text-align: justify;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+}
+#Book {
+    background-color: #f1f1f1;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-top: 75px;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+}
+#bookBtn {
+    width: 100%;
+    height: 70px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+#bookBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+.bookedServices { 
+    height: 420px;
+    overflow-y: scroll;
+}
+.bookedService1 {
+    background-color: white;
+    margin: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookContent {
+    padding-top: 10px;
+}
+
+.details {
+    margin-left: 15px;
+}
+.cancelBtn1{
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #ff1616;
+    font-weight: bold;
+    color: white;
+}
+
+.cancelBtn1:hover {
+    color:black;
+    background-color: #ccc;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 280px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  
+.modalContent {
+    background-color: #fefefe;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 10px;
+}
+  
+.bookNow{
+    padding: 17.5px 50px;
+    margin-top: 0;
+    background-color:#000000;
+    color:white;
+}
+.close1 {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin:10px 20px;
+}
+  
+.close1:hover {
+    color: #acacac;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.openServices { 
+    height: 450px;
+    overflow-y: scroll;
+    background-color: #f1f1f1;
+    margin-top:10px;
+}
+.openService {
+    background-color: white;
+    margin: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finalBookBtn{
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #03b36a;
+    font-weight: bold;
+    color: white;
+}
+
+.finalBookBtn:hover {
+    color:black;
+    background-color: white;
+}
+
+label {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.history {
+    display: flex;
+    justify-content: center;
+}
+
+#History {
+    background-color: #f1f1f1;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-top: 75px;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+}
+
+
+.bookingHistoryh3 {
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ccc;
+    margin:0;
+    padding-top: 25px;
+}
+
+.BookingHistory { 
+    height: 420px;
+    overflow-y: scroll;
+}
+.burntCalories {
+    background-color: white;
+    margin: 10px;
+}
+
+.historyDetails {
+    margin-left: 15px;
+    margin-right: 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.historyDetails h4{
+    margin-top: 15px;
+}
+
+
+.news{
+    display: flex;
+    justify-content: center;
+}
+
+#News {
+    background-color: #f1f1f1;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-top: 75px;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+}
+
+.newsH3 {
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ccc;
+    margin:0;
+    padding-top: 25px;
+}
+
+.newsContent{
+    height: 420px;
+    overflow-y: scroll;
+}
+
+.announcement {
+    background-color: white;
+    color: black;
+    height: 100px;
+    overflow-y: scroll;
+    margin: 10px 0 10px 10px;
+    font-size: 18px;
+    border-top: 2px solid black;
+}
+
+iframe{
+    width: 100%;
+    height:400px;
+    border:none;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 2px solid black;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+.info, .map {
+    background-color: white;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+    padding: 25px;
+    display: flex;
+    flex: 1;
+    width: 800px; 
+    height: 500px;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.info a {
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 10%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}  
+
+.conDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.p{
+    display: flex;
+}

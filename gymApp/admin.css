@@ -1,0 +1,309 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+}
+.top-container {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("gym.jpg");
+    background-attachment: fixed;
+    background-position: center 240%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-container h1{
+    background-color: black;
+    width: 300px;
+    min-width: 300px;
+    color: white;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.header {
+    background-color: #f0e43f;
+    padding: 0px;
+    height: 35px;
+}
+.logout{
+    float: right;
+    padding:10px 30px;
+    border:none;
+    font-weight: bold;
+    margin-right: 30px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.logout:hover {
+    background-color: white;
+    color:black;
+}
+
+.adminTools {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 200px;
+    height: 500px;
+    border: 1px solid #686868;
+}
+.tab {
+    
+    background-color: #a7a7a7;
+    width: 300px;
+    min-width: 300px;
+}
+            
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 17px;
+}
+.tab button:hover {
+    background-color: #ddd;
+    }
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tools{
+    height: 100%;
+}
+
+.content {
+    min-width: 1100px;
+    width: 100%;
+    padding: 0 ;
+    background-color: #ccc;
+    border-left: 1px solid #686868;
+}
+h3{
+    padding: 17.5px 50px;
+    margin-top: 0;
+    background-color:#000000;
+    color:white;
+}
+
+table{
+    display: flex;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    margin: 20px 100px;
+    height: 395px;
+    min-height: 395px;
+    overflow-x:auto;
+}
+
+.ths {
+    border-bottom: 1px solid #686868;
+}
+th, td {
+    text-align: left;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.editButton {
+    position: sticky;
+    right: 0;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+}
+.editBtn1, .editBtn2, .editBtn3, .editBtn4, .editBtn5, .acceptBtn {
+    padding: 5px 10px;
+    background-color: #03b36a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: right;
+    margin-top: 0px;
+    margin-right:10px;
+}
+
+.dltBtn {
+    padding: 6px 10px;
+    background-color: #ff1616;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+}
+
+.editBtn1:hover, .editBtn2:hover, .editBtn3:hover, .editBtn4:hover, .editBtn5:hover, .acceptBtn:hover {
+    background-color: #2afca4;
+}
+
+.dltBtn:hover {
+    background-color: #b83e3e;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin:auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    height: 500px;
+}
+
+.close1, .closeAdd1, .close2, .closeAdd2, .close3, .closeAdd3, .close4, .closeAdd4, .close5, .closeAdd5, .close6 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin:10px 20px;
+}
+  
+.close1:hover, .closeAdd1:hover, .close2:hover, .closeAdd2:hover, .close3:hover, .closeAdd3:hover, .close4:hover, .closeAdd4:hover, .close5:hover, .closeAdd5:hover, .close6:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.editContent form{
+    display: flex;
+    flex-direction: row;
+}
+
+.col1, .col2 {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin: 0 0 0 70px;  
+}
+
+input{
+    height: 30px;
+    width: 190px;
+    margin-bottom: 15px;
+}
+
+select {
+    height: 37px;
+    width: 100%;
+}
+
+.userTypeSelect, .daySelect {
+    height: 37px;
+    width: 190px;
+}
+
+.col2 button, .modal2SaveBtn, .modal2AddBtn, .modal3SaveBtn, .modal3AddBtn, .modal4SaveBtn, .modal4AddBtn, .modal5SaveBtn, .modal5AddBtn, .modal6SaveBtn {
+    background-color: #03b36a;
+    height: 30px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 95px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.col2 button:hover, .modal2SaveBtn:hover, .modal2AddBtn:hover, .modal3SaveBtn:hover, .modal3AddBtn:hover, .modal4SaveBtn:hover, .modal4AddBtn:hover, .modal5SaveBtn:hover, .modal5AddBtn:hover, .modal6SaveBtn:hover {
+    background-color: #2afca4;
+}
+
+.modal2SaveBtn, .modal2AddBtn {
+    margin-top: 375px;
+    margin-left: 165px;
+}
+
+.col2 .modal3SaveBtn, .col2 .modal3AddBtn {
+    margin-top: 238px;
+}
+
+.col2 .modal4SaveBtn, .col2 .modal4AddBtn{
+    margin-top: 300px;
+    margin-left: 103px;
+}
+
+.modal5SaveBtn, .modal5AddBtn{
+    margin-top: 168px;
+    margin-left: 350px;
+}
+
+.modal6SaveBtn{
+    margin-top: 306px;
+    margin-left: 173px;
+}
+.addBtn1, .addBtn2, .addBtn3, .addBtn4, .addBtn5 {
+    float:right;
+    margin: 3px 70px;
+    padding: 5px 38px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background-color: #03b36a;
+}
+
+.addBtn1:hover, .addBtn2:hover, .addBtn3:hover, .addBtn4:hover, .addBtn5:hover {
+    background-color: #2afca4;
+}
+
+#Trainers table {
+    margin: 20px 314px;
+   
+}
+
+#Services table {
+    margin: 20px 242px;
+}
+
+#Schedule table {
+    margin: 20px 321px;
+}
+
+#Announcements_Offers table {
+    margin: 20px 317px;
+}
+
+.editH3 {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.backBtn {
+    padding: 0 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.backBtn:hover {
+    background-color: white;
+    color:black;
+}

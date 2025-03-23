@@ -1,0 +1,412 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.login {
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f0e43f;
+    overflow-x: hidden;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px ;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
+
+.main {
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1{
+    overflow: hidden;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin:0;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: black;
+    border-top: 2px solid  #f0e43f;
+    position: sticky;
+    top: 89px;
+}
+  
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.nav a.active {
+    background-color: rgb(122, 121, 121);
+    color: white;
+}
+
+.mainBody{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("gym.jpg");
+    height: 100%;
+}
+.wtmg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 0;
+    padding: 20px;
+    margin:200px 0;
+}
+.homeContent {
+    background-color: rgb(206, 203, 203);
+    margin: 50px 200px;
+    min-width: 500px;
+    padding: 10px 30px;
+}
+.homeContent h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+.home p{
+    text-align: justify; 
+    width: 60%; 
+    margin: 0 auto; 
+    padding-bottom: 80px;
+}
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.au {
+    min-width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+
+.aboutUs p {
+    
+    text-align: justify; 
+    width: 60%; 
+    margin: 0 auto; 
+    padding-bottom: 80px;
+   
+    color: rgb(0, 0, 0);
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+}
+  
+.menu li a:hover {
+    background-color: #eee;
+}
+
+iframe{
+    width: 100%;
+    height:400px;
+    border:0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(0, 0, 0);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 30px;
+}
+.info, .map {
+    background-color: white;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+    padding: 25px;
+    display: flex;
+    flex: 1;
+    width: 800px; 
+    height: 500px;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.info a {
+    text-decoration: none;
+}
+.info p {
+    margin-bottom: 0;
+}
+.info a:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}  
+
+.conDetails {
+    display: flex;
+    flex-direction: row;
+}
+
+.regModal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  padding-top: 200px;
+}
+
+.modal-content {
+  background-color: #cecece;
+  margin: auto; 
+  width: 750px;
+  height: 550px;
+}
+ 
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.loginBtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: large;
+}
+  
+.regH2 {
+    background-color: black;
+    color: white;
+    margin-top:0;
+    padding:10px 30px;
+    margin-bottom: 40px;
+}
+.loginBtn:hover {
+    opacity:1;
+    background-color: rgb(122, 121, 121);
+}
+
+.registerButton{
+    text-align: right;
+    width: 80%;
+    margin-top:10px;
+}
+
+#regBtn {
+    background-color: #f0e43f;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#regBtn:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.regContainer{
+    display: flex;
+    flex-direction: row;
+    padding-left: 33px;
+}
+
+.col1, .col2 {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin: 0 0 0 70px;  
+}
+
+.addRequest{
+    text-align: center;
+    margin-top: 10px;
+}
+.addRequestBtn {
+    width: 72%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    margin: 17px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.addRequestBtn:hover {
+    opacity:1;
+    background-color: rgb(122, 121, 121);
+}
+
+.servicesContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("services.jpg");
+    height: 100%;
+}
+.tabcontent{
+    width: 80%;
+    height: 512px;
+    margin: 200px 0;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+}
+.services {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgb(212, 214, 214);
+}
+.servicesContent{
+    margin:0;
+    overflow: auto;
+    height: 100%;
+}
+.servicesContentH3{
+    padding:30px 10px;
+    margin-top: 0;
+    border-bottom: 1px solid #000000;
+}
+.servicesContentP{
+    padding:0 20px;
+}
+.services button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+}
+  
+.services button:hover {
+    background-color: #ddd;
+}
+  
+.services button.active {
+    background-color: #ccc;
+}
+  
